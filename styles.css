@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Hanken Grotesk', sans-serif;;
+}
+body{
+    background-color: hsl(221, 100%, 96%);
+}
+.container{
+    background-color:hsl(0, 0%, 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    border-radius: 10px;
+}
+.container .result{
+    background: linear-gradient(
+        hsl(252, 100%, 67%),
+        hsl(241, 81%, 54%)
+    );
+    padding: 20px 20px;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;    
+}
+.result .r1{
+   color: hsl(241, 100%, 89%);
+   font-size: 25px;
+   font-weight: 700;
+}
+.result .square{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(
+        hsl(252, 100%, 67%),
+        hsl(241, 81%, 54%)
+    );
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+.square h1{
+    color: hsl(0, 0%, 100%);
+}
+.square span{
+    color: hsl(241, 100%, 89%);
+}
+h3{
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 30px;
+}
+.det{
+    color: hsl(241, 100%, 89%);
+}
+.details{
+    margin: 0 auto;
+}
+.details p{
+    font-size: 30px;
+    font-weight: bold;
+    color: hsl(224, 30%, 27%);
+    margin-bottom: 20px;
+}
+.details div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 4px;
+}
+.details .cont1{
+    background-color: #FFF6F5;
+    color: hsl(0, 100%, 67%);
+}
+.details .cont2{
+    background-color: #FFFBF2;
+    color: hsl(39, 100%, 56%);
+}
+.details .cont3{
+    background-color: #F2FBFA;
+    color: hsl(166, 100%, 37%);
+}
+.details .cont4{
+    background-color: #F3F3FD;
+    color: hsl(234, 85%, 45%);
+}
+.btn{
+    display: inline-block;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    padding: 12px 60px;
+    border-radius: 20px;
+    width: 250px;
+    text-align: center;
+}
+.btn:hover{
+    background-color: hsl(241, 81%, 54%);
+    cursor: pointer;
+}
+@media (max-width: 375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .result{
+        width: 100%;
+    }
+}
